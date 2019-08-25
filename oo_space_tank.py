@@ -8,6 +8,15 @@ from PIL import Image, ImageDraw, ImageFont
 
 ###################################
 # icon class 
+#
+#   Icons are the things that move around in the tank.  
+#
+#   On initialization, you specify an image file, which colors you want as 
+#     transparent, and the desired size (in pixels) of that icon.
+#
+#   The move method updates the image's x and y position.
+#  
+#   The show method pastes the icon into an image.   
 ###################################
 class Icon():
 
@@ -75,6 +84,9 @@ class Icon():
 
 ###################################
 #  Tank class
+#
+#  A tank has a background image and a list of icons that will be moving 
+#  in that tank.
 # 
 ###################################
 class Tank():
